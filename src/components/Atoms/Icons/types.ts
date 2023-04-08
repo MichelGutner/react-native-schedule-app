@@ -7,7 +7,7 @@ export type TIconProps = {
 };
 
 export interface IIcon {
-  name: TUnionType<'UniquePath' | 'MorePaths'>;
+  name: TUnionType<'UniquePath' | 'ManyPaths'>;
   size?: number;
   color?: string;
 }
@@ -16,7 +16,7 @@ export type TUnionUniquePathIcons = 'search' | 'arrow_left';
 export type TUnionMorePathsIcons = 'hygiene';
 
 type UniquePath = 'UniquePath';
-type MorePaths = 'MorePaths';
+type MorePaths = 'ManyPaths';
 
 export type TUnionType<T extends UniquePath | MorePaths> = T extends UniquePath
   ? TUnionUniquePathIcons

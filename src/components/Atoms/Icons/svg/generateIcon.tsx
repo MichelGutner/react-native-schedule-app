@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import { TIconProps } from '../types';
 
-const DEFAULT_BOX = '0 0 24 24';
+const DEFAULT_VIEW_BOX = '0 0 24 24';
 
 export const SvgIconGenerator: React.FC<TIconProps> = ({
   d,
@@ -14,7 +14,7 @@ export const SvgIconGenerator: React.FC<TIconProps> = ({
 }) => {
   return (
     <View style={{ width, height }}>
-      <Svg viewBox={DEFAULT_BOX}>
+      <Svg viewBox={DEFAULT_VIEW_BOX}>
         {optionalPath ? optionalPath : <Path d={d} fill={fill} />}
       </Svg>
     </View>

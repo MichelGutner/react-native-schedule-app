@@ -2,7 +2,7 @@ import React from 'react';
 import { Path } from 'react-native-svg';
 import { TUnionType } from '../types';
 
-export const OptionalIcons = ({ color }: { color: string }) => (
+const OptionalIcons = ({ color }: { color: string }) => (
   <>
     <Path
       d="M9.088 19.646c.124 0 .225-.1.225-.225v-3.253a.225.225 0 1 0-.45 0v3.253c0 .125.1.225.225.225ZM9.088 15.562c.124 0 .225-.1.225-.225v-.348a.225.225 0 1 0-.45 0v.348a.225.225 0 0 0 .225.225Z"
@@ -15,13 +15,13 @@ export const OptionalIcons = ({ color }: { color: string }) => (
   </>
 );
 
-export const mappedOptionalIcons = (
+export const createIconMultiplePaths = (
   color: string,
-  name: TUnionType<'MorePaths'>,
+  name: TUnionType<'ManyPaths'>,
 ) => {
-  const icon: Record<TUnionType<'MorePaths'>, JSX.Element> = {
+  const icon: Record<TUnionType<'ManyPaths'>, JSX.Element> = {
     hygiene: <OptionalIcons color={color} />,
   };
 
-  return icon[name] || undefined;
+  return icon[name];
 };

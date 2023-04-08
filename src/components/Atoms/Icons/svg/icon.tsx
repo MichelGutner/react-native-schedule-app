@@ -1,15 +1,16 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import { IIcon } from '../types';
 import { SvgIconGenerator } from './generateIcon';
-import { path } from './path';
-import { mappedOptionalIcons } from './optionalPaths';
+import { uniquePathSvg } from './path';
+import { createIconMultiplePaths } from './multiplePaths';
 
 export const Icon: React.FC<IIcon> = ({ color = 'black', name, size = 24 }) => {
+  const type = name as never;
+
   return (
     <SvgIconGenerator
-      optionalPath={mappedOptionalIcons(color, name as any)}
-      d={path[name]}
+      optionalPath={createIconMultiplePaths(color, type)}
+      d={uniquePathSvg[type]}
       fill={color}
       height={size}
       width={size}
