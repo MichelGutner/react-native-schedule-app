@@ -1,14 +1,14 @@
 import styled from 'styled-components/native';
 
 export const SubTitle = styled.Text`
-  font-size: ${({ theme }) => theme.font.medium};
+  font-size: ${({ theme }) => theme.font.medium}px;
   letter-spacing: 0.4px;
   font-weight: 600;
   line-height: 19.2px;
   color: ${({ theme }) => theme.colors.text.white};
 `;
 export const Caption = styled.Text`
-  font-size: ${({ theme }) => theme.font.thin};
+  font-size: ${({ theme }) => theme.font.thin}px;
   letter-spacing: 0.4px;
   line-height: 17px;
   font-weight: 400;
@@ -16,12 +16,12 @@ export const Caption = styled.Text`
 `;
 
 export const Header1 = styled.Text`
-  font-size: ${({ theme }) => theme.font.large};
+  font-size: ${({ theme }) => theme.font.large}px;
   font-weight: 700;
 `;
 
 export const Body2 = styled.Text`
-  font-size: ${({ theme }) => theme.font.small};
+  font-size: ${({ theme }) => theme.font.small}px;
   letter-spacing: 0.4px;
   line-height: 17px;
   font-weight: 500;
