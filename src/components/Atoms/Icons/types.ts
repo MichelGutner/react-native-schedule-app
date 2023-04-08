@@ -12,7 +12,7 @@ export interface IIcon {
   color?: string;
 }
 
-export type TUnionUniquePathIcons = 'search' | 'arrow_left';
+export type TUnionUniquePathIcons = 'search' | 'arrow_left' | 'calender';
 export type TUnionMorePathsIcons = 'hygiene';
 
 type UniquePath = 'UniquePath';
