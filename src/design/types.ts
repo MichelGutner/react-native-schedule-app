@@ -2,7 +2,7 @@ import { TBackground } from './colors/background';
 import { TButton } from './colors/buttons';
 import { TIcon } from './colors/icons';
 import { TText } from './colors/texts';
-import { TSize } from './fonts';
+import { IFontSize } from './fonts';
 
 export interface ITheme {
   colors: {
@@ -11,5 +11,5 @@ export interface ITheme {
     icon: TIcon;
     text: TText;
   };
-  font: TSize;
+  font: IFontSize;
 }
