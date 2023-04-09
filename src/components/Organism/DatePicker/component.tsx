@@ -16,6 +16,7 @@ export const DatePicker = ({
   return (
     <DatePick
       modal
+      mode='date'
       style={{backgroundColor:'black'}}
       locale="pt-br"
       textColor='white'

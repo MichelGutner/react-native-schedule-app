@@ -7,8 +7,20 @@ const search =
 const arrowLeft =
   'M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z';
 
+const arrowDown =
+  'M12.71 15.71a.997.997 0 0 1-1.095.219.998.998 0 0 1-.325-.22l-5-5a1.004 1.004 0 1 1 1.42-1.42l4 4a.39.39 0 0 0 .56 0l4-4a1.004 1.004 0 0 1 1.42 1.42l-4.98 5Z';
+
+export const plusIconPath =
+  'M19.333 11.333h-6.666V4.667a.667.667 0 0 0-1.334 0v6.666H4.667a.667.667 0 0 0 0 1.334h6.666v6.666a.667.667 0 0 0 1.334 0v-6.666h6.666a.667.667 0 0 0 0-1.334Z';
+
+export const historyIconPath =
+  'M12.15 18.903A7.297 7.297 0 1 0 5.603 7.497h2.658a.672.672 0 1 1 0 1.344H4.32a.673.673 0 0 1-.673-.672V4.233a.673.673 0 0 1 1.346 0v1.853a8.634 8.634 0 1 1-1.99 6.246.651.651 0 0 1 .647-.707.695.695 0 0 1 .696.628 7.313 7.313 0 0 0 7.803 6.65Zm-.523-12.287a.673.673 0 0 0-.673.672v4.337c0 .178.071.35.197.475l3.072 3.067a.673.673 0 1 0 .952-.95l-2.875-2.87V7.288a.673.673 0 0 0-.673-.672Z';
+
 export const uniquePathSvg: Record<TUnionType<'UniquePath'>, string> = {
   arrow_left: arrowLeft,
   search: search,
   calender: calendar,
+  arrow_down: arrowDown,
+  plus: plusIconPath,
+  history: historyIconPath
 };

@@ -6,6 +6,7 @@ import type {
 export type TRootStack = {
   Home: any;
   Onboarding: any;
+  Schedule: any;
 };
 
 export type TNavigationProps<T extends ObjectParams> =

@@ -1,4 +1,5 @@
 export interface IHomeHeader {
-    date: string;
-    onPress: () => void;
+  date: string;
+  onPress: () => void;
+  iconColor: string;
 }

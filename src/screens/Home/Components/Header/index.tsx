@@ -5,7 +5,7 @@ import { theme } from '@/design';
 import { TouchableOpacity } from 'react-native';
 import { IHomeHeader } from './types';
 
-export const HomeHeader = ({ date, onPress }: IHomeHeader) => {
+export const HomeHeader = ({ date, onPress, iconColor }: IHomeHeader) => {
   const handlePress = () => {
     onPress();
   };
@@ -15,7 +15,7 @@ export const HomeHeader = ({ date, onPress }: IHomeHeader) => {
         {`${date}`}
       </Text>
       <TouchableOpacity onPress={handlePress}>
-        <Icon name="calender" size={34} color={theme.colors.text.white} />
+        <Icon name="calender" size={34} color={iconColor} />
       </TouchableOpacity>
     </HomeHeaderContainer>
   );
